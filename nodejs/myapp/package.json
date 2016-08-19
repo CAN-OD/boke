@@ -1,5 +1,4 @@
 
-
 {
     "name": "myapp",
     "version": "0.0.0",
@@ -15,8 +14,6 @@
     "serve-favicon": "~2.2.0",
     "debug": "~2.1.1",
     "ejs": "~1.0.0",
-
-
     "mysql":"latest",
     "express-session":"latest"
 
