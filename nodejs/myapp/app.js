@@ -31,8 +31,8 @@ app.use(session({
     saveUninitialized:true
 }));
 
-
-app.use(express.static(path.join(__dirname, 'public')));
+// 
+//app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 //app.use('/users', users);
