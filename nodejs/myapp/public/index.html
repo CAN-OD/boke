@@ -147,7 +147,24 @@
   </aside>
   <script src="js/silder.js"></script>
   <div class="clear"></div>
-  <!-- 清除浮动 --> 
+  <!-- 清除浮动 -->
+    <button id="btn">ask记得哈稍等哈数据库</button>
 </div>
 </body>
+<script src="js/jquery/jquery-1.7.1.js"></script>
+<script>
+    $(function(){
+
+        $("#btn").click(function(v,i){
+            var  client = usr.connect();
+            console.log(v)
+            console.log(i)
+            console.log(client)
+//            usr.insertFun(client,req.body.username ,req.body.password2, function (err) {
+//                if(err) throw err;
+//                res.send('你好！！！！');
+//            });
+        });
+    })
+</script>
 </html>

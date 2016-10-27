@@ -12,7 +12,15 @@ var routes = require('./routes/index');
 //  需要添加的
 var session=require('express-session');
 
+//初始化 express
 var app = express();
+
+//设置监听端口
+app.set('port',process.env.PORT || 3000);
+
+// 设置 express寻找（客户端的）资源位置，静态的网页、css、js等
+//app.use(express.static(__dirname + '/public'));
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -51,11 +59,8 @@ app.get('/', function (req, res) {
 var server = app.listen(3001, function () {
     var host = server.address().address;
     var port = server.address().port;
-
     console.log('Example app listening at http://', host, port);
 });
-
-
 
 // error handlers
 

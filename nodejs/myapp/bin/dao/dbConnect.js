@@ -6,11 +6,15 @@ var mysql=require('mysql');
 function connectServer(){
 
     var client=mysql.createConnection({
-        host:'localhost',
-        user:'root',
-        password:'',
-        database:'crm'
-    })
+//        host:'localhost',
+//        user:'root',
+//        password:'',
+//        database:'crm'
+        host:'121.42.85.194',
+        user:'qdm167504488_db',
+        password:'450451297fw',
+        database:'qdm167504488.my3w.com'
+    });
     return client;
 }
 
@@ -29,6 +33,8 @@ function insertFun(client , username , password,callback){
         if( err ){
             console.log( "error:" + err.message);
             return err;
+        }else{
+            alert(55)
         }
         callback(err);
     });

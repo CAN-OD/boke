@@ -82,7 +82,6 @@ router.route('/one')
     })
     .post(function(req,res) {
         client = usr.connect();
-
         usr.insertFun(client,req.body.username ,req.body.password2, function (err) {
             if(err) throw err;
             res.send('你好！！！！');
